@@ -88,3 +88,11 @@ function rpsFrontEnd(humanImageChoice, botImageChoice, finalMessage){
     document.getElementById('flex-box-rps-div').appendChild(messageDiv);
     document.getElementById('flex-box-rps-div').appendChild(botDiv);
 }
+//Game 4:change button colour
+var all_buttons = document.getElementById('button');
+console.log(all_buttons);
+
+var copyAllButtons = [];
+for (let i=0; i< all_buttons.length; i++){
+    copyAllButtons.push(all_buttons[i]);
+}
