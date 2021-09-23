@@ -1,11 +1,12 @@
-.container-1, .container-2, .container-3, .container-4{
+.container-1, .container-2, .container-3, .container-4, .container-5{
     border: 1px solid rgb(255, 255, 255);
     margin: 0 auto;
     width: 75%;
     text-align: center;
 }
 
-.flex-box-container-1, .flex-box-container-2, .flex-box-rps, .flex-box-pick-color{
+.flex-box-container-1, .flex-box-container-2, .flex-box-rps, .flex-box-pick-color,
+ .flex-blackjack-row-1, .flex-blackjack-row-2, .flex-blackjack-row-3{
     display: flex;
     border: 1px solid rgb(255, 255, 255);
     padding: 10px;
@@ -14,10 +15,41 @@
     justify-content: space-around;
 }
 
+.flex-blackjack-row-1, .flex-blackjack-row-2{
+    background: url('https://t3.ftcdn.net/jpg/03/26/82/34/360_F_326823453_r4TKmEMuNbRl6wr73NxIHH6tKapzK8d1.jpg') center;
+    color: white;
+}
+.flex-blackjack-row-1 div {
+    border: 1px;
+    padding: 10px;
+    flex: 1;
+    text-align: center;
+    height: 350px;
+}
+
+.flex-blackjack-row-1 img {
+    width: 25%;
+    padding: 10px;
+}
+
+.flex-blackjack-row-2 button {
+    border: 1px solid;
+}
+
+.flex-blackjack-row-2 div{
+    border: 1px;
+    padding: 10px;
+}
+
+table, th{
+    padding: 3px;
+    border: 1px solid black;
+}
+
 .flex-box-container-1 div {
     display: flex;
     padding: 10px;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     align-items: center;
 }
 .flex-box-container-2 img{
