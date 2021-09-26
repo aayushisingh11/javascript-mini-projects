@@ -141,7 +141,12 @@ function randomColors(){
 }
 
 //Challange 5: Blackjack
-document.querySelector('#blackjack-hit-button').addEventListener('click', blackjackHit);
+let blackjackGame= {
+    'you':{'scoreSpan': '#your-blackjack-result', 'div': '#your-box', 'score':0},
+    'dealer':{'scoreSpan': '#dealer-blackjack-result', 'div': '#dealer-box', 'score':0}
+};
+
+document.querySelector('#balckjack-hit-button').addEventListener('click', blackjackHit);
 
 function blackjackHit() {
     alert('Hey!');
