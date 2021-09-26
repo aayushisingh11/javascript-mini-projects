@@ -139,3 +139,10 @@ function randomColors(){
         all_buttons[i].classList.add(choices[randomNumber]);
     }
 }
+
+//Challange 5: Blackjack
+document.querySelector('#blackjack-hit-button').addEventListener('click', blackjackHit);
+
+function blackjackHit() {
+    alert('Hey!');
+}
