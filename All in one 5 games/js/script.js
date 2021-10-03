@@ -146,8 +146,20 @@ let blackjackGame= {
     'dealer':{'scoreSpan': '#dealer-blackjack-result', 'div': '#dealer-box', 'score':0}
 };
 
+const YOU = blackjackGame['you']
+const DEALER = blackjackGame['dealer']
+
+const hitSound = new Audio('sound/swish.m4a');
+
 document.querySelector('#balckjack-hit-button').addEventListener('click', blackjackHit);
 
 function blackjackHit() {
-    alert('Hey!');
+    showCard(YOU);
+}
+
+function showCard(activePlayer){
+    let cardImage = document.createElement('img');
+    cardImage.src = 'img/Q.png';
+    document.querySelector(activePlayer['div']).appendChild(cardImage);
+    hitSound.play();
 }
